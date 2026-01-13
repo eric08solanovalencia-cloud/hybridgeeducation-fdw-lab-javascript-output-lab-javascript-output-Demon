@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demostración de Output en Javascript</title>
+    <script>
+        // Esto se ejecuta cuando la página termina de cargarse
+        window.onload = function() {
+            console.log("La página se ha cargado correctamente");
+        };
+
+        // Función para mostrar alerta con el nombre Eric
+        function mostrarAlerta() {
+            alert("Eric");
+        }
+
+        // Función para actualizar el contenido del párrafo
+        function actualizarParrafo() {
+            document.getElementById("miParrafo").textContent = "¡Texto actualizado con Javascript!";
+        }
+    </script>
+</head>
+<body>
+    <h1>Demostración de Output en Javascript</h1>
+
+    <!-- Botón que muestra alerta -->
+    <button onclick="mostrarAlerta()">Mostrar nombre</button>
+
+    <br><br>
+
+    <!-- Párrafo vacío -->
+    <p id="miParrafo"></p>
+
+    <!-- Botón que actualiza el párrafo -->
+    <button onclick="actualizarParrafo()">Actualizar párrafo</button>
+</body>
+</html>
